@@ -1,7 +1,8 @@
 package com.homeinv;
 import java.util.ArrayList;
-
-import javax.sound.midi.SysexMessage;
+import java.util.Map;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Container 
 {
@@ -35,6 +36,13 @@ public class Container
 	}
 	public void addContainerType(String newType) {
 		types.add(newType);
+	}
+	
+	//output-saving
+	public void saveContainer() {
+		FileWriter output = new FileWriter("ContainerDB.xml");
+		output.write("Testing this shit");
+		output.close();
 	}
 	//constructors
 	public Container() {
