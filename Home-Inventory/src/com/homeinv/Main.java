@@ -3,7 +3,21 @@ package com.homeinv;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Container.totalContainers = 0;
+		
+		Container conA = new Container();
+		
+		conA.setContainerName("Office Desk");
+		Container conB = new Container();
+		Container conC = new Container();
+		
+		System.out.println(conA.getContainerID());
+		System.out.println(conB.getContainerID());
+		System.out.println(conC.getContainerID());
+		
+		
+		
+		System.out.println(conA.getContainerName());
 
 	}
 
